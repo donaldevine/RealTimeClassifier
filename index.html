@@ -1,0 +1,21 @@
+<html>
+  <head>
+    <title>Image Classifier using MobileNet and TensorFlow.js</title>
+    <meta charset="UTF-8" />
+    <!-- Load TensorFlow.js. This is required to use MobileNet. -->
+    <script src="https://cdn.jsdelivr.net/npm/@tensorflow/tfjs@1.0.1"> </script>
+    <!-- Load the MobileNet model. -->
+    <script src="https://cdn.jsdelivr.net/npm/@tensorflow-models/mobilenet@1.0.0"> </script>
+
+    <script src="main.js"></script>
+  </head>
+
+  <body onload="setup()">
+    <div style="text-align:center">
+      <h1>Image Classifier</h1>
+      <video id="video">No video stream available</video>
+      <pre id="predictions"></pre>
+      <canvas id="canvas"></canvas>
+    </div>
+  </body>
+</html>
